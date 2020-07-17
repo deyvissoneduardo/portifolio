@@ -23,7 +23,7 @@ export default {
     Navigation,
     Projetos,
     Footer
-  }
+  },
 }
 </script>
 

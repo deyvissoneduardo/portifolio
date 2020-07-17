@@ -3,6 +3,7 @@
     <h2 class="portfolio-navigation-tecnologias">Conhecimentos em Programação</h2>
     <div class="grid">
     <!--Languages-->
+    <!--PHP-->
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -21,6 +22,7 @@
           </div>
         </div>
       </div>
+      <!-- JS -->
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -39,6 +41,7 @@
           </div>
         </div>
       </div>
+      <!--KOTLIN -->
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -57,6 +60,7 @@
           </div>
         </div>
       </div>
+      <!--FLUTTER-->
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -76,6 +80,7 @@
         </div>
       </div>
       <!--Database-->
+      <!--MYSQL-->
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -94,6 +99,7 @@
           </div>
         </div>
       </div>
+      <!--POSTGRES-->
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -112,11 +118,31 @@
           </div>
         </div>
       </div>
+      <!--FIREBASE-->
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <figure>
               <img :src="Firebase" alt="Firebase" class="img-portfolio-navigation" />
+            </figure>
+          </div>
+          <div class="flip-card-back">
+            <p class="card-back-title-lg">Nível de domínio:</p>
+            <div class="outer">
+              <div class="inner"></div>
+              <div class="inner"></div>
+              <div class="inner-disable"></div>
+            </div>
+            <p class="card-back-subtitle">Intermediário</p>
+          </div>
+        </div>
+      </div>
+      <!-- DOCKER -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <figure>
+              <img :src="Docker" alt="Firebase" class="img-portfolio-navigation" />
             </figure>
           </div>
           <div class="flip-card-back">
@@ -144,6 +170,8 @@ import FLUTTER from '../../assets/languages/flutter.jpg'
 import MySql from '../../assets/database/mysql.jpg'
 import Postgres from '../../assets/database/postgres.jpg'
 import Firebase from '../../assets/database/firebase.jpg'
+// DevOps
+import Docker from '../../assets/devops/docker.jpg'
 export default {
   name: "Navigation",
     data: () => {
@@ -154,7 +182,8 @@ export default {
         FLUTTER: FLUTTER,
         MySql: MySql,
         Postgres: Postgres,
-        Firebase: Firebase
+        Firebase: Firebase,
+        Docker: Docker
       }
     }
 };
