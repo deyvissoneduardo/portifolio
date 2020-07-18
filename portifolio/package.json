@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
@@ -13,7 +14,8 @@
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-fragment": "^1.5.1",
-    "vue-material-design-icons": "^4.7.1"
+    "vue-material-design-icons": "^4.7.1",
+    "webpack": "^4.43.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
@@ -22,6 +24,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "push-dir": "^0.4.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
